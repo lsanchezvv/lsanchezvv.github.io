@@ -1,0 +1,105 @@
+body { 
+  background: #000;
+  color: #fff;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  font-family: 'Special Elite', 'Press Start 2P', 'Cabin sketch';
+  height: 70vh;
+  width: auto;
+  font-size: 12px;
+}
+
+.item {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  margin: 10px;
+}
+
+.details {
+  font-family: 'Signika Negative', serif;
+  font-weight: normal;
+}
+
+.name {
+  font-family: 'Signika Negative', serif;
+  font-weight: bold;
+}
+
+.bioContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.socialLinks{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center;
+}
+
+.icons {        
+  font-size: 40px;
+  color: white;
+  padding: 15px;
+}
+
+.img-wrapper{
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4.5px solid white;
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.profilePic {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
