@@ -38,12 +38,16 @@
     text-rendering: optimizelegibility;
   }
 
-  button {
+  button,
+  a {
     border: none;
     background: none;
+    text-decoration: none;
+    color: #3d464d;
   }
 
-  button:hover {
+  button:hover,
+  a:hover {
     background: none;
     font-weight: 400;
   }
@@ -179,7 +183,9 @@
     <div class="links">
       <button onclick="toggleElement('about-text')">About</button>
       <button onclick="toggleElement('contact-email')" id="contact">Contact</button>
-      <span>Resume</span>
+      <a href="https://github.com/lsanchezvv/lsanchezvv.github.io/raw/master/resume/Luis_Sanchez_resume_eng.pdf"
+        title="Resume" target="_blank">Resume
+      </a>
     </div>
     <div class="details" id="about-text">
       <p>Full stack software developer, from the Dominican Republic 🇩🇴 with a B.E. in Information Systems
