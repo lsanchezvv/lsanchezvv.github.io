@@ -118,6 +118,31 @@
     color: #657995
   }
 
+  .email-input {
+    box-shadow: none;
+    border: none;
+    line-height: 28px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: #e6e6e6;
+    padding-left: 5px;
+    width: 160px;
+  }
+
+  .email-icon {
+    float: left;
+    width: 30px;
+    background: #3d464d;
+    line-height: 30px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  .env-icon {
+    margin: 22%;
+    color: white;
+  }
+
   .name {
     font-size: 4em;
     font-weight: 400;
@@ -192,7 +217,9 @@
         from APEC University.</p>
     </div>
     <div class="details" id="contact-email">
-      <i class="fa fa-envelope"> sanzluis0@gmail.com</i>
+      <div class="email-icon">
+        <i class="fa fa-envelope env-icon"> </i>
+      </div><input class="email-input" readonly value="sanzluis0@gmail.com"></input>
     </div>
     <div class="socialLinks">
       <a href="https://www.linkedin.com/in/luisanz/" title="LinkedIn" target="_blank" class="icons">
