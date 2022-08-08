@@ -13,10 +13,10 @@
   <meta property="og:description" content="Luis Sánchez - Software Developer from 🇩🇴" />
   <meta itemprop="description" content="Luis Sánchez - Software Developer from 🇩🇴" />
   <meta property="og:site_name" content="Luis Sánchez" />
-  <meta itemprop="image" content="http://luisanz.com/img/profileimagestd.png" />
-  <meta property="og:image" content="http://luisanz.com/img/profileimagestd.png" />
-  <meta property="og:image:secure_url" content="https://luisanz.com/img/profileimagestd.png" />
-  <meta itemprop="image" content="https://luisanz.com/img/profileimagestd.png" />
+  <meta itemprop="image" content="http://luisanz.com/img/profileimagestd.webp" />
+  <meta property="og:image" content="http://luisanz.com/img/profileimagestd.webp" />
+  <meta property="og:image:secure_url" content="https://luisanz.com/img/profileimagestd.webp" />
+  <meta itemprop="image" content="https://luisanz.com/img/profileimagestd.webp" />
   <meta content="256" property="og:image:width" />
   <meta content="256" property="og:image:height" />
   <title>LuiSanz.com - Dev</title>
@@ -117,7 +117,7 @@
 
   .headline {
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-family: 'Puritana', 'Open Sans';
     color: #657995
   }
@@ -155,12 +155,13 @@
 
   .pic {
     border-radius: 50%;
-    background: url('./img/pimg.webp') no-repeat;
+    background: url('./img/profileimagestd.webp') no-repeat;
     width: 14em;
     height: 14em;
     text-align: center;
     background-size: 135%;
-    background-position-x: -50px;
+    background-position-x: center;
+    background-position-y: center;
   }
 
   .socialLinks {
@@ -200,6 +201,7 @@
       height: 9em;
     }
   }
+
 </style>
 
 <body>
@@ -207,45 +209,54 @@
     <div class="pic"></div>
     <div class="description">
       <h1 class="item name">Luis Sánchez</h1>
-      <h3 class="item headline">Software developer</h3>
+      <h3 class="item headline">Software Engineer</h3>
     </div>
     <div class="links">
       <button onclick="toggleElement('about-text')">About</button>
       <button onclick="toggleElement('contact-email')" id="contact">Contact</button>
-      <a href="https://github.com/lsanchezvv/lsanchezvv.github.io/raw/master/resume/Luis_Sanchez_resume_eng.pdf"
-        title="Resume" target="_blank">Resume
-      </a>
     </div>
     <div class="details" id="about-text">
-      <p>Full stack software developer, from the Dominican Republic <i class="do"></i> 🇩🇴 with a B.Eng. in Information
-        Systems from APEC University.</p>
+      <p>Software Engineer From 🇩🇴 | 7+ years of experience working on software development | 📍🇸🇪</p>
+      <p style="text-align: center;">Main stack: NodeJs, AWS & PostgresQL | Tools: GIT, CI, VS Code & more</p>
+      <p></p>
     </div>
     <div class="details" id="contact-email">
       <div class="email-icon">
         <i class="fa fa-envelope env-icon"> </i>
-      </div><input class="email-input" readonly value="sanzluis0@gmail.com"></input>
+      </div><input id="myEmail" class="email-input" readonly value="sanz.luis0@gmail.com"></input>
+      <button style="border: 1px solid #e6e6e6;padding: 6px;" id="copyBtn" onclick="copyText()">Copy</button>
     </div>
     <div class="socialLinks">
       <a href="https://www.linkedin.com/in/luisanz/" title="LinkedIn" target="_blank" class="icons">
         <i class="fa fa-linkedin"></i>
       </a>
-      <a href="https://twitter.com/luisanz_" title="Twitter" target="_blank" class="icons">
-        <i class="fa fa-twitter"></i>
-      </a>
       <a href="https://github.com/lsanchezvv" title="Github" target="_blank" class="icons">
         <i class="fa fa-github"></i>
-      </a>
-      <a href="https://instagram.com/luisanz_" title="Instagram" target="_blank" class="icons">
-        <i class="fa fa-instagram"></i>
       </a>
     </div>
   </div>
   <script>
-    function toggleElement(elem) {
+    function toggleElement (elem) {
       var aboutPar = document.getElementById(elem);
       aboutPar.classList.toggle('active');
     }
 
+    function copyText () {
+      /* Get the text field */
+      var copyText = document.getElementById("myEmail");
+      const copyBtn = document.getElementById('copyBtn');
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText.value);
+
+      /* Alert the copied text */
+      copyBtn.textContent = 'Copied!';
+      // alert("Copied the text: " + copyText.value);
+
+    }
   </script>
 </body>
 
